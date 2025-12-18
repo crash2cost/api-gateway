@@ -39,31 +39,46 @@ WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
 
  :: Spring Boot ::                (v3.4.0)
 
-2025-12-16T15:45:07.765+02:00  INFO 34656 --- [api-gateway] [           main] i.g.m.api_gateway.ApiGatewayApplication  : Starting ApiGatewayApplication using Java 25.0.1 with PID 34656 (/Users/idolevi/Library/CloudStorage/OneDrive-Personal/Desktop/crash2cost/api-gateway/target/classes started by idolevi in /Users/idolevi/Library/CloudStorage/OneDrive-Personal/Desktop/crash2cost/api-gateway)
-2025-12-16T15:45:07.767+02:00  INFO 34656 --- [api-gateway] [           main] i.g.m.api_gateway.ApiGatewayApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-12-16T15:45:08.036+02:00  INFO 34656 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=be0e8132-3c52-30bf-b449-5c01c4a1fd94
+2025-12-18T09:35:03.350+02:00  INFO 79453 --- [api-gateway] [           main] i.g.m.api_gateway.ApiGatewayApplication  : Starting ApiGatewayApplication using Java 25.0.1 with PID 79453 (/Users/idolevi/Library/CloudStorage/OneDrive-Personal/Desktop/crash2cost/api-gateway/target/classes started by idolevi in /Users/idolevi/Library/CloudStorage/OneDrive-Personal/Desktop/crash2cost/api-gateway)
+2025-12-18T09:35:03.351+02:00  INFO 79453 --- [api-gateway] [           main] i.g.m.api_gateway.ApiGatewayApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-12-18T09:35:03.588+02:00  INFO 79453 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=be0e8132-3c52-30bf-b449-5c01c4a1fd94
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/Users/idolevi/.m2/repository/io/netty/netty-common/4.1.115.Final/netty-common-4.1.115.Final.jar)
 WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
 WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
-2025-12-16T15:45:08.300+02:00  INFO 34656 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-12-16T15:45:08.418+02:00  INFO 34656 --- [api-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
-2025-12-16T15:45:08.441+02:00  INFO 34656 --- [api-gateway] [           main] i.g.m.api_gateway.ApiGatewayApplication  : Started ApiGatewayApplication in 0.852 seconds (process running for 1.027)
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-12-18T09:35:03.837+02:00  INFO 79453 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-12-18T09:35:03.934+02:00  INFO 79453 --- [api-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-12-18T09:35:03.955+02:00  INFO 79453 --- [api-gateway] [           main] i.g.m.api_gateway.ApiGatewayApplication  : Started ApiGatewayApplication in 0.891 seconds (process running for 1.068)
 WARNING: A restricted method in java.lang.System has been called
 WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/Users/idolevi/.m2/repository/io/netty/netty-common/4.1.115.Final/netty-common-4.1.115.Final.jar)
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
+2025-12-18T11:23:47.266+02:00  INFO 79453 --- [api-gateway] [ionShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18T11:23:47.267+02:00  INFO 79453 --- [api-gateway] [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:48 h
+[INFO] Finished at: 2025-12-18T11:23:49+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.0:run (default-cli) on project api-gateway: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
