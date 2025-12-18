@@ -18,6 +18,9 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
             .route("image-service", r -> r.path("/api/images/**")
                     .uri(config.AUTH_SERVICE_URL))
             
+            .route("assessment-service", r -> r.path("/api/assessments/**")
+                    .uri(config.AUTH_SERVICE_URL))
+            
             .route(config.REPORT_SERVICE_NAME, r -> r.path("/api/reports/**")
                     .uri(config.REPORT_SERVICE_URL))
             
