@@ -31,3 +31,17 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### Logs ###
+logs/
+*.log
+*.log.*
+api-gateway.log
+gateway.log
+
+### Environment Variables ###
+.env
+.env.local
+.env.*.local
+.env.example
