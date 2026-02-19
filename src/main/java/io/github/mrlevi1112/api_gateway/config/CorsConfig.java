@@ -35,17 +35,12 @@ public class CorsConfig {
         return new CorsWebFilter(source);
     }
 
-    /**
-     * Filter to remove duplicate CORS headers from downstream services.
-     * This ensures only one set of CORS headers is present in the response.
-     */
     @Bean
     @Order(Ordered.HIGHEST_PRECEDENCE + 1)
     public WebFilter deduplicateCorsHeadersFilter() {
         return (ServerWebExchange exchange, WebFilterChain chain) -> {
             return chain.filter(exchange).then(Mono.fromRunnable(() -> {
                 var headers = exchange.getResponse().getHeaders();
-                // Remove duplicate CORS headers that might come from downstream services
                 if (headers.containsKey("Access-Control-Allow-Origin")) {
                     List<String> origins = headers.get("Access-Control-Allow-Origin");
                     if (origins != null && origins.size() > 1) {

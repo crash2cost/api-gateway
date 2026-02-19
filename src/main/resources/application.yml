@@ -27,7 +27,6 @@ logging:
           predicates:
             - Path=/api/reports/**
 
-# Service URLs for programmatic access
 services:
   auth:
     url: ${AUTH_SERVICE_URL:http://localhost:8002}
