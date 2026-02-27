@@ -14,7 +14,7 @@ logging:
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
   level:
     root: INFO
-    io.github.mrlevi1112: DEBUG
+    io.github.mrlevi1112: INFO
   cloud:
     gateway:
       routes:
