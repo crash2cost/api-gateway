@@ -27,10 +27,10 @@ public class GatewayConfig {
                 .route(authServiceName, r -> r.path("/api/auth/**")
                         .uri(authServiceUrl))
 
-                .route("image-service", r -> r.path("/api/images/**")
+                .route(authServiceName + "-images", r -> r.path("/api/images/**")
                         .uri(authServiceUrl))
 
-                .route("assessment-service", r -> r.path("/api/assessments/**")
+                .route(authServiceName + "-assessments", r -> r.path("/api/assessments/**")
                         .uri(authServiceUrl))
 
                 .route(reportServiceName, r -> r.path("/api/reports/**")

@@ -15,17 +15,6 @@ logging:
   level:
     root: INFO
     io.github.mrlevi1112: DEBUG
-  cloud:
-    gateway:
-      routes:
-        - id: auth-service
-          uri: ${AUTH_SERVICE_URL:http://localhost:8002}
-          predicates:
-            - Path=/api/auth/**,/api/images/**,/api/assessments/**
-        - id: report-service
-          uri: ${REPORT_SERVICE_URL:http://localhost:8003}
-          predicates:
-            - Path=/api/reports/**
 
 services:
   auth:
