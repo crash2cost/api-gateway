@@ -23,17 +23,23 @@ public class GatewayConfig {
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
+        final String corsHeadersToDedupe = "Access-Control-Allow-Origin Access-Control-Allow-Credentials Access-Control-Expose-Headers";
+
         return builder.routes()
                 .route(authServiceName, r -> r.path("/api/auth/**")
+                        .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
                         .uri(authServiceUrl))
 
                 .route(authServiceName + "-images", r -> r.path("/api/images/**")
+                        .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
                         .uri(authServiceUrl))
 
                 .route(authServiceName + "-assessments", r -> r.path("/api/assessments/**")
+                        .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
                         .uri(authServiceUrl))
 
                 .route(reportServiceName, r -> r.path("/api/reports/**")
+                        .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
                         .uri(reportServiceUrl))
 
                 .build();
