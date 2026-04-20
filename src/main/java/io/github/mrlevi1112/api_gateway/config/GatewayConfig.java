@@ -38,6 +38,10 @@ public class GatewayConfig {
                         .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
                         .uri(authServiceUrl))
 
+                .route(authServiceName + "-admin", r -> r.path("/api/admin/**")
+                        .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
+                        .uri(authServiceUrl))
+
                 .route(reportServiceName, r -> r.path("/api/reports/**")
                         .filters(f -> f.dedupeResponseHeader(corsHeadersToDedupe, "RETAIN_FIRST"))
                         .uri(reportServiceUrl))
